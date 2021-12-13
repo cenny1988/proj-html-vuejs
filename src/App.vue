@@ -21,7 +21,19 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
 #app {
-  
+  .btn{
+    padding: 0.375rem 1.35rem;
+  }
+  .btn-user{
+    color: #fff;
+    background-color: #52bbbb;
+    border-color: #52bbbb;
+  }
+  .btn-user-secondary{
+    border: 1px solid #52bbbb;
+    color: #fff;
+  }
 }
 </style>
