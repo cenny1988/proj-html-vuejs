@@ -73,6 +73,7 @@ header{
     .container{
         padding: 0;
         }
+
     // style della barra info grigia
     #info-links{
         background-color: #21333e;
@@ -124,6 +125,12 @@ header{
 
             h1{
                 font-weight: bold;
+            }
+
+            p{
+                color: #c0c3d0;
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
             }
 
             button{

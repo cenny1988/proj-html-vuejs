@@ -56,7 +56,6 @@ export default {
 #app {
   .btn{
     padding: 0.375rem 1.35rem;
-    font-weight: 500;
   }
   .btn-user{
     color: #fff;

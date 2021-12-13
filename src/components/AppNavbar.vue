@@ -29,7 +29,18 @@ export default {
 <style scoped lang="scss">
 #navbar{
   font-size: 1.4rem;
-  font-weight: 500;
+  #logo{
+    font-weight: 600;
+    letter-spacing: .5rem;
+
+    span{
+      padding: .4rem 0 .4rem 1.5rem;
+      border-top-left-radius: 35px;
+      border-bottom-left-radius: 35px;
+      color: #52bbbb;
+      background-color: rgba($color: #52bbbb, $alpha: .25);
+    }
+  }
 
   padding: .8rem 0;
   display: flex;
