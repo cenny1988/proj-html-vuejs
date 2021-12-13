@@ -1,6 +1,6 @@
 <template>
   <nav id="navbar" class="container">
-      <div id="logo">
+      <div class="logo">
         <a href="#"><span>NEX</span>GEN</a>
       </div>
 
@@ -29,7 +29,7 @@ export default {
 <style scoped lang="scss">
 #navbar{
   font-size: 1.4rem;
-  #logo{
+  .logo{
     font-weight: 600;
     letter-spacing: .5rem;
 
@@ -55,10 +55,6 @@ export default {
     &.active a, &:hover a{
       border-bottom: 1px solid #c0c3d0;
     }
-  }
-  a{
-    text-decoration: none;
-    color: #c0c3d0;
   }
 }
 </style>
