@@ -6,11 +6,9 @@
 
       <div>
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">PROCESS</a></li>
-          <li><a href="#">TESTIMONIALS</a></li>
+          <li v-for="link,i in linksOptions" :key="i" :class="link.here ? 'active' : '' ">
+            <a href="#">{{link.text}}</a>
+          </li>
           <li><a href="#"><i class="far fa-user"></i></a></li>
           <button type="button" class="btn btn-user">GET IN TOUCH</button>
         </ul>
@@ -22,7 +20,7 @@
 export default {
   name: 'AppNavbar',
   props: {
-    
+    linksOptions: Array,
   }
 }
 </script>
@@ -31,7 +29,7 @@ export default {
 <style scoped lang="scss">
 #navbar{
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 500;
 
   padding: .8rem 0;
   display: flex;
@@ -42,6 +40,10 @@ export default {
     display: inline-block;
     cursor: pointer;
     padding: 0 1rem;
+
+    &.active a, &:hover a{
+      border-bottom: 1px solid #c0c3d0;
+    }
   }
   a{
     text-decoration: none;

@@ -1,5 +1,6 @@
 <template>
   <header >
+      <!-- div con info orari e links social -->
     <div id="info-links">
         <div class="container">
             <div class="info">
@@ -27,11 +28,12 @@
             </div>
         </div>
     </div>
-    
+    <!-- background con overlay -->
     <div class="bg-bgoverlay">
         <div class="overlay">
-            <AppNavbar/>
-            
+            <!-- navbar -->
+            <AppNavbar :linksOptions="linksDetails"/>
+            <!-- jumbo titolo e buttons -->
             <div class="container">
                 <div id="jumbo-title" >
                     <h6>LOGISTICS SERVICES</h6>
@@ -57,6 +59,9 @@ export default {
   name: 'AppHeader',
   components: {
     AppNavbar,
+  },
+  props: {
+      linksDetails: Array,
   }
 }
 </script>

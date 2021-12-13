@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader/>
+    <AppHeader :linksDetails="links"/>
   </div>
 </template>
 
@@ -11,6 +11,37 @@ export default {
   name: 'App',
   components: {
     AppHeader,
+  },
+  data(){
+      return{
+          links: [
+              {
+                  text: "HOME",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "ABOUT",
+                  url: "#",
+                  here: true
+              },
+              {
+                  text: "SERVICES",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "PROCESS",
+                  url: "#",
+                  here: false
+              },
+              {
+                  text: "TESTIMONIALS",
+                  url: "#",
+                  here: false
+              },
+          ]
+      }
   }
 }
 </script>
@@ -25,6 +56,7 @@ export default {
 #app {
   .btn{
     padding: 0.375rem 1.35rem;
+    font-weight: 500;
   }
   .btn-user{
     color: #fff;
