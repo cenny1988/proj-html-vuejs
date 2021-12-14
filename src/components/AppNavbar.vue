@@ -34,7 +34,7 @@ export default {
     letter-spacing: .5rem;
 
     span{
-      padding: .4rem 0 .4rem 1.5rem;
+      padding: .6rem 0 .6rem 1.5rem;
       border-top-left-radius: 35px;
       border-bottom-left-radius: 35px;
       color: #52bbbb;

@@ -1,8 +1,9 @@
 <template>
+<div>
   <footer>
       <div class="container">
           <div class="row row-cols-4">
-                <!-- col1 -->
+              <!-- col1 -->
               <div class="col">
                 <div class="logo mb-3">
                     <a href="#"><span>NEX</span>GEN</a>
@@ -15,17 +16,30 @@
               </div>
 
               <!-- col2 -->
-              <Card :links="aboutsLinks"/>
+              <Card :title="'About'" :links="aboutsLinks"/>
 
               <!-- col3 -->
-              <Card />
+              <Card :title="'Trasport'" :links="trasportLinks"/>
 
               <!-- col4 -->
-              <Card />
-
+              <Card :title="'Support'" :links="supportLinks"/>
           </div>
       </div>
+
   </footer>
+  <div id="copyright">
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col">
+          Enjoy the low price. We are tracking any intention of piracy.
+        </div>
+        <div class="col text-end">
+          &#169; 2020 NEXGEN is Proudly Powered by <span>Codings</span>.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
@@ -40,7 +54,9 @@ export default {
   },
   props: {
       contactsDetails: Array,
-      aboutsLinks: Object
+      aboutsLinks: Array,
+      trasportLinks: Array,
+      supportLinks: Array,
   }
 }
 </script>
@@ -56,13 +72,23 @@ footer{
     letter-spacing: .5rem;
 
     span{
-      padding: .4rem 0 .4rem 1.5rem;
+      padding: .6rem 0 .6rem 1.5rem;
       border-top-left-radius: 35px;
       border-bottom-left-radius: 35px;
       color: #52bbbb;
       background-color: rgba($color: #52bbbb, $alpha: .25);
+      }
+
     }
 
+}
+#copyright{
+  background-color: #0d0d11;
+  padding: 1rem 0;
+  font-size: .8rem;
+
+  span{
+    color: #52bbbb;
   }
 }
 </style>

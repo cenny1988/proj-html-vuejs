@@ -4,7 +4,9 @@
 
     <AppFooter 
       :contactsDetails="contacts"
-      :aboutsLinks="footerLinks"
+      :aboutsLinks="abouts"
+      :trasportLinks="trasports"
+      :supportLinks="supports"
     />
   </div>
 </template>
@@ -62,87 +64,84 @@ export default {
               contact: "Main Avenue, 987"
             },
           ],
-          footerLinks:{
-            about:[
-              {
-                link: "The Company",
-                url: "#"
-              },
-              {
-                link: "Institutional",
-                url: "#"
-              },
-              {
-                link: "Social & Events",
-                url: "#"
-              },
-              {
-                link: "Innovation",
-                url: "#"
-              },
-              {
-                link: "Envoironment",
-                url: "#"
-              },
-              {
-                link: "Technology",
-                url: "#"
-              },
-            ],
-            trasport:[
-              {
-                link: "Industrialized",
-                url: "#"
-              },
-              {
-                link: "Chermicals",
-                url: "#"
-              },
-              {
-                link: "Packaged Liquids",
-                url: "#"
-              },
-              {
-                link: "Construction",
-                url: "#"
-              },
-              {
-                link: "Laminated Wood",
-                url: "#"
-              },
-              {
-                link: "And others",
-                url: "#"
-              },
-            ],
-            support:[
-              {
-                link: "Responsibility",
-                url: "#"
-              },
-              {
-                link: "Terms of Use",
-                url: "#"
-              },
-              {
-                link: "About Cookies",
-                url: "#"
-              },
-              {
-                link: "Privacy Policy",
-                url: "#"
-              },
-              {
-                link: "Accessibility",
-                url: "#"
-              },
-              {
-                link: "Information",
-                url: "#"
-              },
-            ],
-
-          },
+          abouts:[
+            {
+              link: "The Company",
+              url: "#"
+            },
+            {
+              link: "Institutional",
+              url: "#"
+            },
+            {
+              link: "Social & Events",
+              url: "#"
+            },
+            {
+              link: "Innovation",
+              url: "#"
+            },
+            {
+              link: "Envoironment",
+              url: "#"
+            },
+            {
+              link: "Technology",
+              url: "#"
+            },
+          ],
+          trasports:[
+            {
+              link: "Industrialized",
+              url: "#"
+            },
+            {
+              link: "Chermicals",
+              url: "#"
+            },
+            {
+              link: "Packaged Liquids",
+              url: "#"
+            },
+            {
+              link: "Construction",
+              url: "#"
+            },
+            {
+              link: "Laminated Wood",
+              url: "#"
+            },
+            {
+              link: "And others",
+              url: "#"
+            },
+          ],
+          supports:[
+            {
+              link: "Responsibility",
+              url: "#"
+            },
+            {
+              link: "Terms of Use",
+              url: "#"
+            },
+            {
+              link: "About Cookies",
+              url: "#"
+            },
+            {
+              link: "Privacy Policy",
+              url: "#"
+            },
+            {
+              link: "Accessibility",
+              url: "#"
+            },
+            {
+              link: "Information",
+              url: "#"
+            },
+          ],
       }
   }
 }
