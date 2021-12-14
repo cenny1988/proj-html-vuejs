@@ -2,6 +2,8 @@
   <div id="app">
     <AppHeader :linksDetails="links" :contactsDetails="contacts"/>
 
+    <AppMain :contactsDetails="contacts"/>
+
     <AppFooter 
       :contactsDetails="contacts"
       :aboutsLinks="abouts"
@@ -14,12 +16,14 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
+import AppMain from './components/AppMain.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppFooter,
+    AppMain,
   },
   data(){
       return{
@@ -169,6 +173,10 @@ export default {
   .btn-user-secondary{
     border: 1px solid #52bbbb;
     color: #fff;
+  }
+  .btn-user-info{
+    border: 1px solid #52bbbb;
+    color: #52bbbb;
   }
   a{
     text-decoration: none;

@@ -1,7 +1,7 @@
 <template>
   <section>
     <div v-for="contact, i in contacts" :key="i" class="mb-2">
-        <i :class="contact.icon"></i> {{contact.contact}}
+        <span class="circle"><i :class="contact.icon"></i></span> {{contact.contact}}
     </div>
   </section>
 </template>
@@ -19,6 +19,7 @@ export default {
 <style scoped lang="scss">
 section{
   div{
+    
     margin-right: 1rem;
     cursor: pointer;
     
