@@ -2,7 +2,10 @@
   <div id="app">
     <AppHeader :linksDetails="links" :contactsDetails="contacts"/>
 
-    <AppFooter :contactsDetails="contacts"/>
+    <AppFooter 
+      :contactsDetails="contacts"
+      :aboutsLinks="footerLinks"
+    />
   </div>
 </template>
 
@@ -59,6 +62,87 @@ export default {
               contact: "Main Avenue, 987"
             },
           ],
+          footerLinks:{
+            about:[
+              {
+                link: "The Company",
+                url: "#"
+              },
+              {
+                link: "Institutional",
+                url: "#"
+              },
+              {
+                link: "Social & Events",
+                url: "#"
+              },
+              {
+                link: "Innovation",
+                url: "#"
+              },
+              {
+                link: "Envoironment",
+                url: "#"
+              },
+              {
+                link: "Technology",
+                url: "#"
+              },
+            ],
+            trasport:[
+              {
+                link: "Industrialized",
+                url: "#"
+              },
+              {
+                link: "Chermicals",
+                url: "#"
+              },
+              {
+                link: "Packaged Liquids",
+                url: "#"
+              },
+              {
+                link: "Construction",
+                url: "#"
+              },
+              {
+                link: "Laminated Wood",
+                url: "#"
+              },
+              {
+                link: "And others",
+                url: "#"
+              },
+            ],
+            support:[
+              {
+                link: "Responsibility",
+                url: "#"
+              },
+              {
+                link: "Terms of Use",
+                url: "#"
+              },
+              {
+                link: "About Cookies",
+                url: "#"
+              },
+              {
+                link: "Privacy Policy",
+                url: "#"
+              },
+              {
+                link: "Accessibility",
+                url: "#"
+              },
+              {
+                link: "Information",
+                url: "#"
+              },
+            ],
+
+          },
       }
   }
 }

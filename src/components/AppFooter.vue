@@ -2,6 +2,7 @@
   <footer>
       <div class="container">
           <div class="row row-cols-4">
+                <!-- col1 -->
               <div class="col">
                 <div class="logo mb-3">
                     <a href="#"><span>NEX</span>GEN</a>
@@ -12,6 +13,16 @@
                 <Contact :contacts="contactsDetails"/>
                 <button type="button" class="btn btn-user-secondary mt-3">GET IT Touch</button>
               </div>
+
+              <!-- col2 -->
+              <Card :links="aboutsLinks"/>
+
+              <!-- col3 -->
+              <Card />
+
+              <!-- col4 -->
+              <Card />
+
           </div>
       </div>
   </footer>
@@ -19,14 +30,17 @@
 
 <script>
 import Contact from '@/components/Contact.vue'
+import Card from '@/components/Card.vue'
 
 export default {
   name: 'AppFooter',
   components: {
-      Contact
+      Contact,
+      Card
   },
   props: {
       contactsDetails: Array,
+      aboutsLinks: Object
   }
 }
 </script>
