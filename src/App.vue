@@ -183,6 +183,45 @@ export default {
     text-decoration: none;
     color: #c0c3d0;
   }
-  
+// stile logo
+  .logo{
+    font-weight: 600;
+    letter-spacing: .5rem;
+
+    span{
+      padding: .6rem 0 .6rem 1.5rem;
+      border-top-left-radius: 35px;
+      border-bottom-left-radius: 35px;
+      color: #52bbbb;
+      background-color: rgba($color: #52bbbb, $alpha: .25);
+    }
+  }
+// stile sezioni black
+  .section-black{
+    background-color: #121117;
+    padding: 5rem 0;
+  }
+}
+// stile sezioni white
+.section-white{
+    background-color: #fff;
+    padding: 5rem 0;
+
+    h6, span{
+        color: #52bbbb;
+    }
+    h2, h5{
+        color: #000;
+        font-weight: 900;
+    }
+    h2{
+        font-weight: 900;
+
+        span{
+            padding: .2rem 1rem;
+            background-color: rgba($color: #52bbbb, $alpha: .4);
+        }
+
+    }
 }
 </style>

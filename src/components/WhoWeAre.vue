@@ -51,11 +51,13 @@
                         </div>
                     </div>
                     <h5>Certifications</h5>
-                    <div class="half-width shadow">
-                        <img src="../assets/img/certificate.png" alt="certified">
-                    </div>
-                    <div class="half-width invert-shadow">
-                        <img src="../assets/img/certificate.png" alt="certified">
+                    <div class="row row-cols-1 row-lg-2">
+                        <div class="col half-width shadow">
+                            <img src="../assets/img/certificate.png" alt="certified">
+                        </div>
+                        <div class="col half-width invert-shadow">
+                            <img src="../assets/img/certificate.png" alt="certified">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,28 +71,9 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scope lang="scss">
 // le stessw regole sono esportate anche per la sezione contact form
 .section-white{
-    background-color: #fff;
-    padding: 5rem 0;
-
-    h6, span{
-        color: #52bbbb;
-    }
-    h2, h5{
-        color: #000;
-        font-weight: 900;
-    }
-    h2{
-        font-weight: 900;
-
-        span{
-            padding: .2rem 1rem;
-            background-color: rgba($color: #52bbbb, $alpha: .4);
-        }
-
-    }
    
     // style prte sinistra
     .left-border{
@@ -125,7 +108,7 @@ export default {
     }
 
     .half-width{
-        width: 50%;
+        width: 35%;
         display: inline-block;
         padding: .5rem;
         
