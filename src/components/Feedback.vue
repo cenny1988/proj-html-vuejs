@@ -65,7 +65,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #feedback{
-    padding-top: 0;
+    padding-top: 0!important;
 }
 #results{
     min-height: 450px;

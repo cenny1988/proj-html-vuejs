@@ -159,29 +159,33 @@ export default {
 }
 
 #app {
-  $black-dark: #121117;
-  color: #c0c3d0;
+  $black-user: #121117;
+  $green-user: #52bbbb;
+  $gray-user: #c0c3d0;
+  $white-user: #fff;
+
+  color: $gray-user;
 
   .btn{
     padding: 0.375rem 1.35rem;
     font-weight: 500;
   }
   .btn-user{
-    color: #fff;
-    background-color: #52bbbb;
-    border-color: #52bbbb;
+    color: $white-user;
+    background-color: $green-user;
+    border-color: $green-user;
   }
   .btn-user-secondary{
-    border: 1px solid #52bbbb;
-    color: #fff;
+    border: 1px solid $green-user;
+    color: $white-user;
   }
   .btn-user-info{
-    border: 1px solid #52bbbb;
-    color: #52bbbb;
+    border: 1px solid $green-user;
+    color: $green-user;
   }
   a{
     text-decoration: none;
-    color: #c0c3d0;
+    color: $gray-user;
   }
 // stile logo
   .logo{
@@ -192,13 +196,13 @@ export default {
       padding: .6rem 0 .6rem 1.5rem;
       border-top-left-radius: 35px;
       border-bottom-left-radius: 35px;
-      color: #52bbbb;
-      background-color: rgba($color: #52bbbb, $alpha: .25);
+      color: $green-user;
+      background-color: rgba($green-user, $alpha: .25);
     }
   }
 // stile sezioni black
   .section-black{
-    background-color: #121117;
+    background-color: $black-user;
     padding: 5rem 0;
   }
 }
