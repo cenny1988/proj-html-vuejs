@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col">
                   <h6>ROAD TRANSPORT</h6>
-                  <h2>Main Services</h2>
+                  <h2>Main <span>Services</span></h2>
               </div>
           </div>
           <div class="row">
@@ -17,16 +17,13 @@
                   <button class="btn btn-user-secondary">SEE ALL</button>
               </div>
           </div>
-          <div class="row">
-              <div class="col-4">
-                  <Card :footer="false" :descriptions="servicesDetails[0]"/>
-              </div>
-              <div class="col-4">
-                  <Card :footer="false" :descriptions="servicesDetails[1]"/>
-              </div>
-              <div class="col-4">
-                  <Card :footer="false" :descriptions="servicesDetails[2]"/>
-              </div>
+          <div class="row row-cols-3">
+                <Card v-for="item, i in servicesDetails"
+                :key="i"
+                :services="true" 
+                :footer="false" 
+                :descriptions="item"
+            />
           </div>
       </div>
   </section>
@@ -49,12 +46,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 .section-black{
-    h6{
+    h6, h3{
         color: #52bbbb;
     }
     h2, h5{
         color: #fff;
         font-weight: 900;
+    }
+
+    h2{
+        span{
+            padding: .2rem 1rem;
+            background-color: rgba($color: #52bbbb, $alpha: .4);
+        }
     }
 
 }
