@@ -2,7 +2,7 @@
     <div id="contactform" class="section-white">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-9">
+                <div class="col-12 col-lg-8">
                     <h6>SEND A MESSAGE</h6>
                     <h2 class="my-4">Get in <span>Touch</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -32,7 +32,7 @@
                     </div>
                     <button class="btn btn-user my-4">SEND</button>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-lg-4">
                     <h5>Example Inc.</h5>
                     <p> nisi sed doloremque recusandae quos laudantium incidunt!</p>
                     <p> nisi sed doloremque recusandae quos laudantium incidunt!</p>
