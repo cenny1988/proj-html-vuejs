@@ -26,7 +26,7 @@
                 <!-- se NON siamo nel footer corpo card-->
                 <p v-else>
                     {{descriptions.description}}
-                    <span class="quotes"><i class="fas fa-quote-right fa-2x"></i></span>
+                    <span v-if="feedback" class="quotes"><i class="fas fa-quote-right fa-2x"></i></span>
                 </p>
             </div>
         </div>

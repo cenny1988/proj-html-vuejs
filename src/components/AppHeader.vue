@@ -4,12 +4,12 @@
     <div id="info-links">
         <div class="container">
             <div class="row py-1">
-                <div class="d-none d-lg-block col-md-6">
+                <div class="col-lg-5 d-none d-lg-block ">
                     <i class="fas fa-clock"></i>
                     <h6>Open Hours : Mon - Sat - 9:00 - 18:00</h6>
                 </div>
-                <div class="col-sm-12 col-lg-6 justify-content-lg-end d-flex">
-                    <Contact :contacts="filteredContacts" class="d-flex"/>
+                <div class="col-sm-12 col-lg-7 justify-content-lg-end d-flex">
+                    <Contact :form="false" :contacts="filteredContacts" class="d-flex"/>
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>

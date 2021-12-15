@@ -2,7 +2,7 @@
     <div id="contactform" class="section-white">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-12 col-md-9">
                     <h6>SEND A MESSAGE</h6>
                     <h2 class="my-4">Get in <span>Touch</span></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -27,16 +27,16 @@
                         </div>
                         <!-- message -->
                         <div class="col">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
                         </div>
                     </div>
                     <button class="btn btn-user my-4">SEND</button>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-md-3">
                     <h5>Example Inc.</h5>
                     <p> nisi sed doloremque recusandae quos laudantium incidunt!</p>
                     <p> nisi sed doloremque recusandae quos laudantium incidunt!</p>
-                    <Contact class="green-circle my-4" :contacts="contactsArr"/>
+                    <Contact :form="true" class="green-circle my-4" :contacts="contactsArr"/>
 
                     <button class="btn btn-user-info">VIEW MAP</button>
                 </div>
@@ -69,17 +69,16 @@ export default {
 }
 
 .green-circle{
-    .circle{
-        display: inline-block;
-        width: 1rem;
-        height: 1rem;
-        background-color: rgba($color: #52bbbb, $alpha: .4);
-        // color: #52bbbb;
+    // .circle{
+    //     display: inline-block;
+    //     width: 1rem;
+    //     height: 1rem;
+    //     background-color: rgba($color: #52bbbb, $alpha: .4);
 
-        .svg-inline--fa{
-            font-size: 2rem;
-        }
+    //     .svg-inline--fa{
+    //         font-size: 2rem;
+    //     }
 
-    }
+    // }
 }
 </style>

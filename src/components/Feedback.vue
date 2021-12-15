@@ -1,7 +1,7 @@
 <template>
   <section id="feedback" class="section-black">
       <div id="results">
-          <div class="container py-5">
+          <div class="container ">
               <div class="row text-center mb-3">
                   <div class="col">
                       <h6>WHAT ARE WE DOING</h6>
@@ -64,13 +64,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#feedback{
+    padding-top: 0;
+}
 #results{
-    height: 400px;
+    height: 450px;
     background-image: url(../assets/img/bg-10.jpg);
     background-position: center;
+    padding-top: 8rem;
+    
 
     .numbers{
-        padding: 4rem;
+        padding-TOP: 3rem;
     }
 }
 </style>

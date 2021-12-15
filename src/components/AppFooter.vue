@@ -11,7 +11,7 @@
                 <div class="mb-3">
                     A Functional HTML Template for Corporate & Business
                 </div>
-                <Contact :contacts="contactsDetails"/>
+                <Contact :form="false" :contacts="contactsDetails"/>
                 <button type="button" class="btn btn-user-secondary mt-3">GET IT Touch</button>
               </div>
 
