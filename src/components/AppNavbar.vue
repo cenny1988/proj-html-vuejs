@@ -5,7 +5,7 @@
         <a href="#"><span>NEX</span>GEN</a>
       </div>
       
-      <div class="col-2 offset-8 d-lg-none" >
+      <div class="col-2 text-end offset-8 d-lg-none" >
         <a href="#"><i class="fas fa-bars"></i></a>
       </div>
 
