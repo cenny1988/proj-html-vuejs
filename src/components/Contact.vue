@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <div v-for="contact, i in contacts" :key="i" class="mb-2">
+  <section >
+    <div  v-for="contact, i in contacts" :key="i" class="mb-2">
         <span class="circle"><i :class="contact.icon"></i></span> {{contact.contact}}
     </div>
   </section>

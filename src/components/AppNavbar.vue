@@ -1,10 +1,15 @@
 <template>
   <nav id="navbar" class="container">
-      <div class="logo">
+    <div class="row">
+      <div class="col-2 logo">
         <a href="#"><span>NEX</span>GEN</a>
       </div>
+      
+      <div class="col-2 offset-8 d-lg-none" >
+        <a href="#"><i class="fas fa-bars"></i></a>
+      </div>
 
-      <div>
+      <div class="col-10 d-none d-lg-block text-end">
         <ul>
           <li v-for="link,i in linksOptions" :key="i" :class="link.here ? 'active' : '' ">
             <a href="#">{{link.text}}</a>
@@ -13,6 +18,7 @@
           <button type="button" class="btn btn-user">GET IN TOUCH</button>
         </ul>
       </div>
+    </div>
   </nav>
 </template>
 
@@ -28,25 +34,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #navbar{
-  font-size: 1.4rem;
-  // .logo{
-  //   font-weight: 600;
-  //   letter-spacing: .5rem;
-
-  //   span{
-  //     padding: .6rem 0 .6rem 1.5rem;
-  //     border-top-left-radius: 35px;
-  //     border-bottom-left-radius: 35px;
-  //     color: #52bbbb;
-  //     background-color: rgba($color: #52bbbb, $alpha: .25);
-  //   }
-  // }
-
+  font-size: 1rem;
   padding: .8rem 0;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-
+  
   li{
     display: inline-block;
     cursor: pointer;

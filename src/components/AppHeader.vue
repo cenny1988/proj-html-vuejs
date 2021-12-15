@@ -3,12 +3,12 @@
       <!-- div con info orari e links social -->
     <div id="info-links">
         <div class="container">
-            <div class="info">
-                <div>
+            <div class="row py-1">
+                <div class="d-none d-lg-block col-md-6">
                     <i class="fas fa-clock"></i>
                     <h6>Open Hours : Mon - Sat - 9:00 - 18:00</h6>
                 </div>
-                <div class="d-flex">
+                <div class="col-sm-12 col-lg-6 justify-content-lg-end d-flex">
                     <Contact :contacts="filteredContacts" class="d-flex"/>
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -73,19 +73,13 @@ header{
     // style della barra info grigia
     #info-links{
         background-color: #21333e;
-        .info{
-            padding: .7rem 0;
-
-            display: flex;
-            justify-content: space-between;
-
-            .svg-inline--fa{
-                margin-right: .6rem;
-            }
-            h6{
-                display: inline-block;
-            }
+        .svg-inline--fa{
+            margin-right: .6rem;
         }
+        h6{
+            display: inline-block;
+        }
+        
     }
     //style del background e del relativo overlay 
     .bg-bgoverlay{
