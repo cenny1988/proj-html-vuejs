@@ -2,7 +2,7 @@
 <div>
   <footer class="section-black">
       <div class="container">
-          <div class="row row-cols-4">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 ">
               <!-- col1 -->
               <div class="col">
                 <div class="logo mb-3">
@@ -29,11 +29,11 @@
   </footer>
   <div id="copyright">
     <div class="container">
-      <div class="row row-cols-2">
+      <div class="row row-cols-1 row-cols-md-2">
         <div class="col">
           Enjoy the low price. We are tracking any intention of piracy.
         </div>
-        <div class="col text-end">
+        <div class="col text-md-end">
           &#169; 2020 NEXGEN is Proudly Powered by <span>Codings</span>.
         </div>
       </div>

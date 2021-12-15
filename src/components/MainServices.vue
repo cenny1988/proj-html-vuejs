@@ -8,16 +8,16 @@
               </div>
           </div>
           <div class="row">
-              <div class="col-10">
+              <div class="col-9 col-lg-10">
                   <p>
                       With all of this expertise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.
                   </p>
               </div>
-              <div class="col-2 text-end">
+              <div class="col-3 col-lg-2 text-end">
                   <button class="btn btn-user-secondary">SEE ALL</button>
               </div>
           </div>
-          <div class="row row-cols-3">
+          <div class="row row-cols-1 row-cols-lg-3">
                 <Card v-for="item, i in servicesDetails"
                 :key="i"
                 :services="true" 

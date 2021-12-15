@@ -9,9 +9,9 @@
         </div>
       </div>
     </div>
-    <div id="row-user" class="container-fluid"></div>
-    <div id="service" class="container">
-      <div class="row row-cols-5">
+    
+    <div id="procedure-service" class="container-fluid">
+      <div class="row row-cols-1 row-cols-lg-5">
         <div class="col text-center">
           <div class="num">01</div>
           <h5 class="pb-2">Collection of information</h5>
@@ -50,13 +50,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-#row-user{
-  border-top: 4px solid rgba($color: #52bbbb, $alpha: .25);
-}
-#service{
+#procedure-service{
   .col{
     padding: 40px 12px;
     position: relative;
+    border-top: 4px solid rgba($color: #52bbbb, $alpha: .25);
+
 
     .num{
       color: #52bbbb;
