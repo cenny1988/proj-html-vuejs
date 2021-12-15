@@ -29,18 +29,18 @@ export default {
 <style scoped lang="scss">
 #navbar{
   font-size: 1.4rem;
-  .logo{
-    font-weight: 600;
-    letter-spacing: .5rem;
+  // .logo{
+  //   font-weight: 600;
+  //   letter-spacing: .5rem;
 
-    span{
-      padding: .6rem 0 .6rem 1.5rem;
-      border-top-left-radius: 35px;
-      border-bottom-left-radius: 35px;
-      color: #52bbbb;
-      background-color: rgba($color: #52bbbb, $alpha: .25);
-    }
-  }
+  //   span{
+  //     padding: .6rem 0 .6rem 1.5rem;
+  //     border-top-left-radius: 35px;
+  //     border-bottom-left-radius: 35px;
+  //     color: #52bbbb;
+  //     background-color: rgba($color: #52bbbb, $alpha: .25);
+  //   }
+  // }
 
   padding: .8rem 0;
   display: flex;

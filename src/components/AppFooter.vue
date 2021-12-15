@@ -1,6 +1,6 @@
 <template>
 <div>
-  <footer>
+  <footer class="section-black">
       <div class="container">
           <div class="row row-cols-4">
               <!-- col1 -->
@@ -16,13 +16,13 @@
               </div>
 
               <!-- col2 -->
-              <Card :title="'About'" :links="aboutsLinks"/>
+              <Card :footer="true" :title="'About'" :links="aboutsLinks"/>
 
               <!-- col3 -->
-              <Card :title="'Trasport'" :links="trasportLinks"/>
+              <Card :footer="true" :title="'Trasport'" :links="trasportLinks"/>
 
               <!-- col4 -->
-              <Card :title="'Support'" :links="supportLinks"/>
+              <Card :footer="true" :title="'Support'" :links="supportLinks"/>
           </div>
       </div>
 
@@ -62,26 +62,26 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-footer{
-    background-color: #121117;
-    padding: 4rem 0;
+<style  lang="scss">
+.section-black{
+  background-color: #121117;
+  padding: 5rem 0;
+}
 
-    .logo{
-    font-weight: 600;
-    letter-spacing: .5rem;
+.logo{
+font-weight: 600;
+letter-spacing: .5rem;
 
-    span{
-      padding: .6rem 0 .6rem 1.5rem;
-      border-top-left-radius: 35px;
-      border-bottom-left-radius: 35px;
-      color: #52bbbb;
-      background-color: rgba($color: #52bbbb, $alpha: .25);
-      }
-
-    }
+span{
+  padding: .6rem 0 .6rem 1.5rem;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  color: #52bbbb;
+  background-color: rgba($color: #52bbbb, $alpha: .25);
+  }
 
 }
+
 #copyright{
   background-color: #0d0d11;
   padding: 1rem 0;

@@ -159,6 +159,7 @@ export default {
 }
 
 #app {
+  $black-dark: #121117;
   color: #c0c3d0;
 
   .btn{

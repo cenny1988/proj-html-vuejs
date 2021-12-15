@@ -4,6 +4,7 @@
     <WhoWeAre/>
 
     <!-- Main Services = trusted Feedback -->
+    <MainServices :servicesDetails="services"/>
 
     <!-- Logistical Procedure -->
 
@@ -16,16 +17,40 @@
 <script>
 import WhoWeAre from '@/components/WhoWeAre.vue'
 import ContactForm from '@/components/ContactForm.vue'
+import MainServices from '@/components/MainServices.vue'
 
 export default {
   name: 'AppMain',
   components: {
     WhoWeAre,
-    ContactForm
+    ContactForm,
+    MainServices,
   },
   props: {
     contactsDetails: Array,
-  }
+  },
+  data() {
+      return {
+          services: [
+              {
+                  icon: "fas fa-microchip",
+                  title: "Technology",
+                  description: "We are continually focused on developing technology solutions adapted to our client's needs."
+              },
+              {
+                  icon: "fas fa-temperature-low",
+                  title: "Reefer Cargo",
+                  description: "Regular and frequent monitoring from the receipt of the loaded conteiner to final destination."
+              },
+              {
+                  icon: "fas fa-truck",
+                  title: "Dry Cargo",
+                  description: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care."
+              },
+
+          ]
+      }
+  },
 }
 </script>
 

@@ -2,7 +2,7 @@
     <div id="whoweare" class="section-white">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-9 pe-5">
                     <h6>WHO WE ARE</h6>
                     <h2 class="my-4"><span><i class="far fa-gem"></i>Excellence</span> in Trasport</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum enim vitae animi, amet in mollitia veniam maxime perspiciatis sequi suscipit doloremque vero porro vel aut, iure eos illo impedit facere.</p>
@@ -91,6 +91,7 @@ export default {
         }
 
     }
+   
     // style prte sinistra
     .left-border{
         border-left: rgba($color: #52bbbb, $alpha: .4) 5px solid;

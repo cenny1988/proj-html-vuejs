@@ -69,7 +69,7 @@ export default {
 }
 
 .green-circle{
-    span .circle{
+    .circle{
         display: inline-block;
         width: 1rem;
         height: 1rem;
