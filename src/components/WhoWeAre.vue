@@ -1,5 +1,5 @@
 <template>
-    <div id="whoweare" class="section-white">
+    <section id="whoweare" class="section-white">
         <div class="container">
             <div class="row">
                 <div class="col-9 pe-5">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

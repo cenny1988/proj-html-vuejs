@@ -7,6 +7,7 @@
     <MainServices :servicesDetails="services"/>
 
     <!-- Logistical Procedure -->
+    <Procedure/>
 
     <!-- trusted Feedback -->
     <Feedback :feed="feedbacks"/>
@@ -22,6 +23,7 @@ import WhoWeAre from '@/components/WhoWeAre.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import MainServices from '@/components/MainServices.vue'
 import Feedback from '@/components/Feedback.vue'
+import Procedure from '@/components/Procedure.vue'
 
 export default {
   name: 'AppMain',
@@ -30,6 +32,7 @@ export default {
     ContactForm,
     MainServices,
     Feedback,
+    Procedure
   },
   props: {
     contactsDetails: Array,
